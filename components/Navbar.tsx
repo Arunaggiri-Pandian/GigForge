@@ -15,9 +15,7 @@ const Navbar: React.FC<NavbarProps> = ({ user, onNavigate, currentView }) => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center cursor-pointer group" onClick={() => onNavigate('home')}>
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center mr-3 group-hover:shadow-lg group-hover:shadow-blue-500/50 transition-all">
-              <Zap className="w-5 h-5 text-white" />
-            </div>
+            <img src="/favicon.png" alt="GigForge Logo" className="w-8 h-8 mr-3" />
             <span className="font-bold text-xl tracking-tight text-white">Micron GigForge</span>
           </div>
 
